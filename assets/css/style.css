@@ -1251,6 +1251,7 @@ header {
   text-align: center;
   border-radius: 50%;
   border: 1px solid #080B1A;
+  z-index: 9;
 }
 
 .count-box.sucess h3, .count-box.sucess h4 {
@@ -1296,6 +1297,17 @@ header {
   margin-top: 20px;
 }
 
+.count-box .border-shape {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #9AA14A;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .count-box .icon {
   width: 30px;
   height: 30px;
@@ -1314,6 +1326,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+  z-index: 91;
   top: 11px;
   right: 0px;
 }
