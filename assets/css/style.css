@@ -1208,7 +1208,23 @@ ul {
 header {
   width: 100%;
   padding: 50px 0px;
+  height: 100vh;
   background-color: #141A28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .count-box {
@@ -1226,6 +1242,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1277,5 +1294,34 @@ header {
   font-weight: 500;
   color: #9AA14A;
   margin-top: 20px;
+}
+
+.count-box .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #080B1A;
+  background-color: #0F111D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 11px;
+  right: 0px;
+}
+
+.count-box .icon img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=style.css.map */

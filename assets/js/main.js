@@ -10,17 +10,13 @@ function UpdateTimeDown(startingMinutes) {
 
         countDownEl.innerHTML = minutes + ":" + second; 
 
-        if(minutes >= startingMinutes-1 && second >=0 ){
+        if(second >=0 ){
             ParentEl.classList.add('sucess');
             time-- ; 
-        }else if (minutes <= startingMinutes-1 && second >=0){
-            ParentEl.classList.remove('sucess').add('mid');
-            time-- ; 
-        }
-        else{
+        }else{
             clearInterval(interval);
             countDownEl.innerHTML = `00 : 0`;
-            ParentEl.classList.remove('mid').add('blue');
+            ParentEl.classList.remove('sucess').add('blue');
         }
     } , 1000)
 }
