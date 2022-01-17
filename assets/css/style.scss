@@ -64,6 +64,21 @@ header{
         }
     }
 
+    &.red{
+        .count , h4{
+            color: red !important;
+        }
+        .count , .icon{
+            border-color: red !important;
+        }
+
+        .icon{
+            img{
+                filter: invert(14%) sepia(99%) saturate(5972%) hue-rotate(1deg) brightness(107%) contrast(118%); 
+            }
+        }
+    }
+
     &.blue{
         .count , h4 {
             color: #195faf !important;
@@ -132,6 +147,11 @@ header{
 
         &.blue{
             color: #195faf;
+        }
+
+        
+        &.red{
+            color: #f00 !important;   
         }
     }
 

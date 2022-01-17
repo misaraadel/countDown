@@ -1,6 +1,7 @@
 const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;
+const WARNING_THRESHOLD = 12;
+const ALERT_THRESHOLD = 7;
+const timeOut_THRESHOLD = 1;
 
 const COLOR_CODES = {
   info: {
@@ -13,6 +14,10 @@ const COLOR_CODES = {
   alert: {
     color: "blue",
     threshold: ALERT_THRESHOLD
+  },
+  timeOut:{
+    color: "red",
+    threshold: timeOut_THRESHOLD
   }
 };
 
@@ -87,8 +92,23 @@ function formatTime(time) {
 }
 
 function setRemainingPathColor(timeLeft) {
-  const { alert, warning, info } = COLOR_CODES;
-  if (timeLeft <= alert.threshold) {
+  const { alert, warning, info , timeOut } = COLOR_CODES;
+  if (timeLeft <= timeOut.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(alert.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(timeOut.color);
+
+    document
+      .getElementById("baseColor")
+      .classList.remove(alert.color);
+    document
+      .getElementById("baseColor")
+      .classList.add(timeOut.color);
+    document.getElementById("base-timer-label").innerHTML = "overtime";
+  }else if (timeLeft <= alert.threshold) {
     document
       .getElementById("base-timer-path-remaining")
       .classList.remove(warning.color);

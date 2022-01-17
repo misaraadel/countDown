@@ -1286,6 +1286,19 @@ header {
           filter: invert(84%) sepia(50%) saturate(3950%) hue-rotate(211deg) brightness(92%) contrast(109%);
 }
 
+.count-box.red .count, .count-box.red h4 {
+  color: red !important;
+}
+
+.count-box.red .count, .count-box.red .icon {
+  border-color: red !important;
+}
+
+.count-box.red .icon img {
+  -webkit-filter: invert(14%) sepia(99%) saturate(5972%) hue-rotate(1deg) brightness(107%) contrast(118%);
+          filter: invert(14%) sepia(99%) saturate(5972%) hue-rotate(1deg) brightness(107%) contrast(118%);
+}
+
 .count-box.blue .count, .count-box.blue h4 {
   color: #195faf !important;
 }
@@ -1359,6 +1372,10 @@ header {
 
 .count-box .base-timer__path-remaining.blue {
   color: #195faf;
+}
+
+.count-box .base-timer__path-remaining.red {
+  color: #f00 !important;
 }
 
 .count-box .border-shape {
