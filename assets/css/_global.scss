@@ -1,25 +1,25 @@
 @font-face {
-    font-family: "ExpoArabic";
-    src: url('../fonts/ExpoArabic/ExpoArabic-Medium.ttf');
+    font-family: "MoreSugar";
+    src: url('../fonts/ExpoArabic/MoreSugar-Regular.ttf');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: "ExpoArabic";
-    src: url('../fonts/ExpoArabic/ExpoArabic-Book.ttf');
+    font-family: "MoreSugar";
+    src: url('../fonts/ExpoArabic/MoreSugar-Thin.ttf');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: "ExpoArabic";
-    src: url('../fonts/ExpoArabic/ExpoArabic-SemiBold.ttf');
+    font-family: "MoreSugar";
+    src: url('../fonts/ExpoArabic/MoreSugar-Extras.ttf');
     font-weight: 900;
 }
 
 * {
     margin: 0px;
     box-sizing: border-box;
-    font-family: "ExpoArabic" , sans-serif ;
+    font-family: "MoreSugar" , sans-serif ;
     scroll-behavior: smooth;
 
     &::selection{
